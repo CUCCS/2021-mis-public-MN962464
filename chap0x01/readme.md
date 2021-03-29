@@ -30,6 +30,7 @@
 ![img](img/设置SSID广播和非广播模式.png)
 
 - 配置不同的加密方式
+
 ![img](img/配置不同的加密方式.png)
 
 - 设置AP管理密码
@@ -85,9 +86,11 @@ VBoxManage convertfromraw --format VDI openwrt-x86-64-combined-squashfs.img open
     ![img](img/配置网络3.png)
 
 - 网络连通性
+
 ![img](img/网络连通性.png)
 
 - 配置host-only网卡的地址
+
 ![img](img/配置网络4.png)
 
 - PuTTy连接虚拟机，方便命令操作
@@ -96,6 +99,7 @@ VBoxManage convertfromraw --format VDI openwrt-x86-64-combined-squashfs.img open
 - 安装Luci
 
     + 需要的包
+    
     ![img](img/安装luci需要的包.png)
     + 安装
     ![img](img/安装luci.png)
@@ -106,6 +110,7 @@ VBoxManage convertfromraw --format VDI openwrt-x86-64-combined-squashfs.img open
 ![img](img/登录后页面截图.png)
 
 - 安装usbutils 
+
 ![img](img/安装usbutils.png)
 
 - 查找网卡对应的驱动并安装，重启
@@ -138,6 +143,7 @@ VBoxManage convertfromraw --format VDI openwrt-x86-64-combined-squashfs.img open
 - 如何在gitbash中使用wget命令，参考[博客](https://blog.csdn.net/eddy23513/article/details/106621754/).
 - VBoxManage找不到命令，解决方法，将命令中的VBoxManage改为'c:\Program Files\Oracle\Virtualbox\VBoxManage.exe'即可正常使用
 - 装好的openwrt无法正常上网
+
 ![img](img/无法上网.png)
 解决方案：关闭防火墙并关闭VPN(不知道原因，可能是玄学)
 
