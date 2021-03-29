@@ -27,6 +27,7 @@
 ![img](img/设置AP的管理员用户名和密码.png)
 
 - 设置SSID广播和非广播模式
+
 ![img](img/设置SSID广播和非广播模式.png)
 
 - 配置不同的加密方式
@@ -74,6 +75,8 @@ VBoxManage convertfromraw --format VDI openwrt-x86-64-combined-squashfs.img open
 ![img](img/下载openWrt镜像.png)
 
 - 转换为vdi
+
+![img](img/转换vdi.png)
 
 - 新建虚拟机，使用得出的vdi作为虚拟硬盘，并完成网络配置
     ```
