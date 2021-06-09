@@ -11,7 +11,7 @@
 ### 实验环境
 - Android Studio
 - 命令行
-- AVD：PIX 4 API 30 
+- AVD：PIX 4 API 30 [Android 11.0]
 - 将adb.exe添加到环境变量
 ![img](img/将adb添加到环境变量.png)
 
@@ -46,10 +46,10 @@ adb pull remote local
 adb push local remote
 ```
 
-- 将文件从设备复制到本地
+将文件从设备复制到本地
 ![img](img/将文件从设备复制到本地.png)
 
-- 将文件从本地上传到设备
+将文件从本地上传到设备
 ![img](img/将文件从本地上传到设备.png)
 
 ```
@@ -71,7 +71,7 @@ usage: am start [-D] [-W] [-P <FILE>] [--start-profiler <FILE>]
        am force-stop <PACKAGE>
 ```
 
-对以下实例做演示，详情见录屏：
+对以下实例做演示：
 
 ```
 # Camera（照相机）的启动方法为:
@@ -178,8 +178,8 @@ usage: input ...
 
 
 - [x] 如何修改代码实现通过 adb shell am start -a android.intent.action.VIEW -d http://sec.cuc.edu.cn/ 可以让我们的cuc.edu.cn.misdemo程序出现在“用于打开浏览器的应用程序选择列表”？
+    向`AndroidManifest.xml`中添加代码
     ```
-    向AndroidManifest.xml中添加代码
     <action android:name="android.intent.action.VIEW" />
     <category android:name="android.intent.category.DEFAULT" />
     <category android:name="android.intent.category.BROWSABLE" />
@@ -188,13 +188,14 @@ usage: input ...
     ```
 
 - [x] 如何修改应用程序默认图标？
+    
     在`res/mipmap`下新建 Image Assert，可以更换图标样式，颜色。
     ![img](img/更换misdemo的颜色.png)
 
 
 - [x] 如何修改代码使得应用程序图标在手机主屏幕上实现隐藏？
+    向`MainActivity.java`中添加代码
     ```
-    向MainActivity.java中添加代码
 
     PackageManager packageManager = getPackageManager();
     ComponentName componentName = new ComponentName(MainActivity.this, MainActivity.class);
